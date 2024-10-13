@@ -1,5 +1,3 @@
-// ArrayExample.java
-
 import java.util.Scanner;
 
 public class ArrayExample {
