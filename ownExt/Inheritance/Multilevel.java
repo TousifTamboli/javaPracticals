@@ -1,4 +1,5 @@
-//multilevel inheritance
+//multilevel inheritance -  A class inherits from another 
+// class, which inherits from another class, and so on.
 
 class Shape{
     public void area(){
@@ -12,7 +13,7 @@ class Triangle extends Shape{
     }
 }
 
-class EquilateralTriangle{
+class EquilateralTriangle extends Triangle{
     public void area(int l, int h){
         System.out.println(0.5*l*h);
     }
@@ -21,6 +22,7 @@ class EquilateralTriangle{
 public class Multilevel {
     public static void main(String[] args){
         EquilateralTriangle t1 = new EquilateralTriangle();
+        t1.area();
         t1.area(10, 20);
     }
 }

@@ -1,4 +1,5 @@
-// Single level inheritance
+// Single level inheritance -  A class inherits from a single parent class. 
+// This is the simplest type of inheritance.
 
 class Shape {
     public void area(){
@@ -15,6 +16,7 @@ class Triangle extends Shape{
 public class SingleLevel {
     public static void main(String[] args){
         Triangle t1 = new Triangle();
+        t1.area();
         t1.area(10, 5);
     }
     
